@@ -21,8 +21,8 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
     *value = *value ^ (1u << j);
   }
 
-  int count = 0;
-  int num = *value;
+  count = 0;
+  num = *value;
   while (num > 0) {
     num &= (num -1);
     count++;
