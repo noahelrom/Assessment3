@@ -1,6 +1,7 @@
 //  unsigned int maski = 1u << i;
 //  unsigned int maskj = 1u << j;
 unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int& popcount) {
+  popcount = popcount;
   unsigned int maski = 1u << i;
   unsigned int maskj = 1u << j;
   
