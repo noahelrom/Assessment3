@@ -10,9 +10,6 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
     num &= (num -1);
     count++;
   }
-  if ((i > 31) || (j > 31)) {
-    count++;
-  }
   popcount = count;
 
   bool biti = (*value & (1u << i)) != 0;
