@@ -2,13 +2,6 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
   if ((value == nullptr) || (i > 31) || (j > 31)) {
     return nullptr;
   }
-  //int count = 0;
-  //int num = *value;
-  //while (num > 0) {
-  //  num &= (num -1);
-  //  count++;
-  //}
-  //popcount = count;
 
   int count = 0;
   for(int k = 0; k < 32; k ++) {
