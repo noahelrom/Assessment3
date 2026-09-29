@@ -12,7 +12,7 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
   popcount = 0;
   int num = *value;
   while (num > 0) {
-    num &= (num -1)
+    num &= (num -1);
     popcount++;
   }
     
