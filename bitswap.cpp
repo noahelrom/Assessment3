@@ -23,5 +23,3 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
 
   return value;
 }
-
-1010
