@@ -5,7 +5,6 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
     return nullptr;
   }
 
-  popcount = 1;
   int num = *value;
   while (num > 0) {
     num &= (num -1);
