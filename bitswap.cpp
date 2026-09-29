@@ -4,14 +4,21 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
   if ((value == nullptr) || (i > 31) || (j > 31)) {
     return nullptr;
   }
+  //int count = 0;
+  //int num = *value;
+  //while (num > 0) {
+  //  num &= (num -1);
+  //  count++;
+  //}
+  //if ((i > 31) || (j > 31)) {
+  //  count++;
+  //}
+  //popcount = count;
   int count = 0;
-  int num = *value;
-  while (num > 0) {
-    num &= (num -1);
-    count++;
-  }
-  if ((i > 31) || (j > 31)) {
-    count++;
+  for(int k = 0; i < 32; i ++) {
+    if (*value & (1u << k)) != 0) {
+      count++;
+    }
   }
   popcount = count;
 
@@ -23,14 +30,4 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
     *value = *value ^ (1u << i);
     *value = *value ^ (1u << j);
   }
-
-  count = 0;
-  num = *value;
-  while (num > 0) {
-    num &= (num -1);
-    count++;
-  }
-  popcount = count;
-
-  return value;
 }
