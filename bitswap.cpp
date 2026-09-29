@@ -15,7 +15,7 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
   //}
   //popcount = count;
   int count = 0;
-  for(int k = 0; i < 32; i ++) {
+  for(int k = 0; k < 32; k ++) {
     if ((*value & (1u << k)) != 0) {
       count++;
     }
