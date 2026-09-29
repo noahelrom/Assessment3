@@ -2,7 +2,7 @@
 //  unsigned int maskj = 1u << j;
 unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int& popcount) {
 
-  if ((*value == nullptr) || (i > 31) || (j > 31)) {
+  if ((value == nullptr) || (i > 31) || (j > 31)) {
     return nullptr;
   }
 
