@@ -13,8 +13,9 @@ unsigned int* swapBits(unsigned int* value, unsigned int i, unsigned int j, int&
 
   unsigned num = value;
   while (num > 0) {
-    num &= (num - 1)
+    num &= (num - 1);
     popcount += 1;
   }
 
   return value;
+}
